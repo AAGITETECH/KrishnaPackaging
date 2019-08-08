@@ -1,0 +1,488 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AEE58914-C191-4655-AD17-44C376EC43F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KrishnaPackaging</RootNamespace>
+    <AssemblyName>KrishnaPackaging</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Win32GC">
+      <HintPath>D:\Work\Latest Version\PharmaDocs\PharmaDocs\bin\Debug\Win32GC.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Extended\ConsumptionDetail.cs" />
+    <Compile Include="Data\Extended\ConsumptionMaster.cs" />
+    <Compile Include="Data\Extended\DispatchMaster.cs" />
+    <Compile Include="Data\Extended\ExpenseMaster.cs" />
+    <Compile Include="Data\Extended\FormMaster.cs" />
+    <Compile Include="Data\Extended\InwardMaster.cs" />
+    <Compile Include="Data\Extended\MachineMaster.cs" />
+    <Compile Include="Data\Extended\MixingMaster.cs" />
+    <Compile Include="Data\Extended\ProductionDetail.cs" />
+    <Compile Include="Data\Extended\ReceiveNoteDetail.cs" />
+    <Compile Include="Data\Extended\ReceiveNoteMaster.cs" />
+    <Compile Include="Data\Extended\RewinderMaster.cs" />
+    <Compile Include="Data\Extended\WasteMaster.cs" />
+    <Compile Include="Data\KrishnaPackagingDb.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KrishnaPackagingDb.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MainMDI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMDI.designer.cs">
+      <DependentUpon>MainMDI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\Dataset\KPDataSet.cs">
+      <DependentUpon>KPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\Dataset\KPDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KPDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\CostingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\CostingReport.Designer.cs">
+      <DependentUpon>CostingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportWindow.Designer.cs">
+      <DependentUpon>ReportWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\StockReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\StockReport.Designer.cs">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DispatchAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DispatchAdd.Designer.cs">
+      <DependentUpon>DispatchAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\DispatchView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DispatchView.Designer.cs">
+      <DependentUpon>DispatchView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpenseAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExpenseAdd.Designer.cs">
+      <DependentUpon>ExpenseAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ExpenseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ExpenseView.Designer.cs">
+      <DependentUpon>ExpenseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WasteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WasteAdd.Designer.cs">
+      <DependentUpon>WasteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\WasteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\WasteView.Designer.cs">
+      <DependentUpon>WasteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RawMaterlalView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RawMaterlalView.Designer.cs">
+      <DependentUpon>RawMaterlalView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PasswordReset.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PasswordReset.Designer.cs">
+      <DependentUpon>PasswordReset.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\StockView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\StockView.Designer.cs">
+      <DependentUpon>StockView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductionAdd.Designer.cs">
+      <DependentUpon>ProductionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProductionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ProductionView.Designer.cs">
+      <DependentUpon>ProductionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InwardAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InwardAdd.Designer.cs">
+      <DependentUpon>InwardAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\InwardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\InwardView.Designer.cs">
+      <DependentUpon>InwardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsumptionAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsumptionAdd.Designer.cs">
+      <DependentUpon>ConsumptionAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsumptionView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsumptionView.Designer.cs">
+      <DependentUpon>ConsumptionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MachineView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MachineView.Designer.cs">
+      <DependentUpon>MachineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MachineAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MachineAdd.Designer.cs">
+      <DependentUpon>MachineAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MixingAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MixingAdd.Designer.cs">
+      <DependentUpon>MixingAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MixingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MixingView.Designer.cs">
+      <DependentUpon>MixingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RewinderAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RewinderAdd.Designer.cs">
+      <DependentUpon>RewinderAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\RewinderView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\RewinderView.Designer.cs">
+      <DependentUpon>RewinderView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReceiveNoteAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReceiveNoteAdd.Designer.cs">
+      <DependentUpon>ReceiveNoteAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ItemAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ItemAdd.Designer.cs">
+      <DependentUpon>ItemAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ReceiveNoteView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ReceiveNoteView.Designer.cs">
+      <DependentUpon>ReceiveNoteView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ItemView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ItemView.Designer.cs">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\CompanyDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\CompanyDetail.Designer.cs">
+      <DependentUpon>CompanyDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PartyAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PartyAdd.Designer.cs">
+      <DependentUpon>PartyAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PartyView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PartyView.Designer.cs">
+      <DependentUpon>PartyView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserAdd.Designer.cs">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserView.Designer.cs">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MainMDI.resx">
+      <DependentUpon>MainMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Report\RDLC\LotProfitLoss.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RDLC\Costing.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RDLC\DispatchReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RDLC\Consumption.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\RDLC\ProductionStock.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\LotStock.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\MixingReport.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\PartyReceiveDispatch.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\RewinderReport.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\ReceiveNote.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\RawMaterialStock.rdlc" />
+    <EmbeddedResource Include="Report\RDLC\ItemStock.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\CostingReport.resx">
+      <DependentUpon>CostingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportWindow.resx">
+      <DependentUpon>ReportWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\StockReport.resx">
+      <DependentUpon>StockReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DispatchAdd.resx">
+      <DependentUpon>DispatchAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\DispatchView.resx">
+      <DependentUpon>DispatchView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpenseAdd.resx">
+      <DependentUpon>ExpenseAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ExpenseView.resx">
+      <DependentUpon>ExpenseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WasteAdd.resx">
+      <DependentUpon>WasteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\WasteView.resx">
+      <DependentUpon>WasteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RawMaterlalView.resx">
+      <DependentUpon>RawMaterlalView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PasswordReset.resx">
+      <DependentUpon>PasswordReset.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\StockView.resx">
+      <DependentUpon>StockView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductionAdd.resx">
+      <DependentUpon>ProductionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ProductionView.resx">
+      <DependentUpon>ProductionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InwardAdd.resx">
+      <DependentUpon>InwardAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\InwardView.resx">
+      <DependentUpon>InwardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsumptionAdd.resx">
+      <DependentUpon>ConsumptionAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsumptionView.resx">
+      <DependentUpon>ConsumptionView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MachineView.resx">
+      <DependentUpon>MachineView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MachineAdd.resx">
+      <DependentUpon>MachineAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MixingAdd.resx">
+      <DependentUpon>MixingAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MixingView.resx">
+      <DependentUpon>MixingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RewinderAdd.resx">
+      <DependentUpon>RewinderAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\RewinderView.resx">
+      <DependentUpon>RewinderView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReceiveNoteAdd.resx">
+      <DependentUpon>ReceiveNoteAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ItemAdd.resx">
+      <DependentUpon>ItemAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ReceiveNoteView.resx">
+      <DependentUpon>ReceiveNoteView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ItemView.resx">
+      <DependentUpon>ItemView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\CompanyDetail.resx">
+      <DependentUpon>CompanyDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PartyAdd.resx">
+      <DependentUpon>PartyAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PartyView.resx">
+      <DependentUpon>PartyView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserAdd.resx">
+      <DependentUpon>UserAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserView.resx">
+      <DependentUpon>UserView.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Data\KrishnaPackagingDb.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>KrishnaPackagingDb.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\KrishnaPackagingDb.dbml.layout">
+      <DependentUpon>KrishnaPackagingDb.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report\Dataset\KPDataSet.xsc">
+      <DependentUpon>KPDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\Dataset\KPDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KPDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\Dataset\KPDataSet.xss">
+      <DependentUpon>KPDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Extended\KrishnaPackaging.sql" />
+    <Content Include="Data\KrishbaPackakging.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

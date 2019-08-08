@@ -1,0 +1,456 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="KrishnaPackaging" Class="KrishnaPackagingDbDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DEV-1;Initial Catalog=KrishnaPackaging;Integrated Security=True" SettingsObjectName="KrishnaPackaging.Properties.Settings" SettingsPropertyName="KrishnaPackagingConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CompanyMaster" Member="CompanyMasters">
+    <Type Name="CompanyMaster">
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CompanyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="PersonName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BillingAddress" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="DeliveryAddress" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="GSTIN" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PANNo" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="LogoImg" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="ImageFile" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="CompanyMaster_WasteMaster" Member="WasteMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="WasteMaster" />
+      <Association Name="CompanyMaster_ConsumptionMaster" Member="ConsumptionMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="ConsumptionMaster" />
+      <Association Name="CompanyMaster_DispatchMaster" Member="DispatchMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="DispatchMaster" />
+      <Association Name="CompanyMaster_ExpenseDetail" Member="ExpenseDetails" ThisKey="CompanyId" OtherKey="CompanyId" Type="ExpenseDetail" />
+      <Association Name="CompanyMaster_ExpenseMaster" Member="ExpenseMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="ExpenseMaster" />
+      <Association Name="CompanyMaster_InwardMaster" Member="InwardMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="InwardMaster" />
+      <Association Name="CompanyMaster_ItemMaster" Member="ItemMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="ItemMaster" />
+      <Association Name="CompanyMaster_MachineMaster" Member="MachineMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="MachineMaster" />
+      <Association Name="CompanyMaster_MixingMaster" Member="MixingMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="MixingMaster" />
+      <Association Name="CompanyMaster_PartyMaster" Member="PartyMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="PartyMaster" />
+      <Association Name="CompanyMaster_ProductionMaster" Member="ProductionMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="ProductionMaster" />
+      <Association Name="CompanyMaster_ReceiveNoteDetail" Member="ReceiveNoteDetails" ThisKey="CompanyId" OtherKey="CompanyId" Type="ReceiveNoteDetail" />
+      <Association Name="CompanyMaster_ReceiveNoteMaster" Member="ReceiveNoteMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="ReceiveNoteMaster" />
+      <Association Name="CompanyMaster_RewinderMaster" Member="RewinderMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="RewinderMaster" />
+      <Association Name="CompanyMaster_UserMaster" Member="UserMasters" ThisKey="CompanyId" OtherKey="CompanyId" Type="UserMaster" />
+    </Type>
+  </Table>
+  <Table Name="dbo.WasteMaster" Member="WasteMasters">
+    <Type Name="WasteMaster">
+      <Column Name="WMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="MachineId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="WasteQty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="CompanyMaster_WasteMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="MachineMaster_WasteMaster" Member="MachineMaster" ThisKey="MachineId" OtherKey="MachinId" Type="MachineMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConsumptionDetail" Member="ConsumptionDetails">
+    <Type Name="ConsumptionDetail">
+      <Column Name="ConDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ConId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RDId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Total" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ConsumptionMaster_ConsumptionDetail" Member="ConsumptionMaster" ThisKey="ConId" OtherKey="ConId" Type="ConsumptionMaster" IsForeignKey="true" />
+      <Association Name="ItemMaster_ConsumptionDetail" Member="ItemMaster" ThisKey="IMId" OtherKey="IMId" Type="ItemMaster" IsForeignKey="true" />
+      <Association Name="MixingMaster_ConsumptionDetail" Member="MixingMaster" ThisKey="MMId" OtherKey="MMId" Type="MixingMaster" IsForeignKey="true" />
+      <Association Name="RewinderDetail_ConsumptionDetail" Member="RewinderDetail" ThisKey="RDId" OtherKey="RewDId" Type="RewinderDetail" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ConsumptionMaster" Member="ConsumptionMasters">
+    <Type Name="ConsumptionMaster">
+      <Column Name="ConId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MachinId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ConsumptionMaster_ConsumptionDetail" Member="ConsumptionDetails" ThisKey="ConId" OtherKey="ConId" Type="ConsumptionDetail" />
+      <Association Name="CompanyMaster_ConsumptionMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="MachineMaster_ConsumptionMaster" Member="MachineMaster" ThisKey="MachinId" OtherKey="MachinId" Type="MachineMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DispatchDetail" Member="DispatchDetails">
+    <Type Name="DispatchDetail">
+      <Column Name="DDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MachineId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="DispatchMaster_DispatchDetail" Member="DispatchMaster" ThisKey="DMId" OtherKey="DMId" Type="DispatchMaster" IsForeignKey="true" />
+      <Association Name="MachineMaster_DispatchDetail" Member="MachineMaster" ThisKey="MachineId" OtherKey="MachinId" Type="MachineMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DispatchMaster" Member="DispatchMasters">
+    <Type Name="DispatchMaster">
+      <Column Name="DMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PartyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="DNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InvoiceNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="VehicleNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PartyPoNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PartyPODate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="DispatchMaster_DispatchDetail" Member="DispatchDetails" ThisKey="DMId" OtherKey="DMId" Type="DispatchDetail" />
+      <Association Name="CompanyMaster_DispatchMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="PartyMaster_DispatchMaster" Member="PartyMaster" ThisKey="PartyId" OtherKey="PartyId" Type="PartyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpenseDetail" Member="ExpenseDetails">
+    <Type Name="ExpenseDetail">
+      <Column Name="EDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="EMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MachineId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="CompanyMaster_ExpenseDetail" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="ExpenseMaster_ExpenseDetail" Member="ExpenseMaster" ThisKey="EMId" OtherKey="EMId" Type="ExpenseMaster" IsForeignKey="true" />
+      <Association Name="MachineMaster_ExpenseDetail" Member="MachineMaster" ThisKey="MachineId" OtherKey="MachinId" Type="MachineMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ExpenseMaster" Member="ExpenseMasters">
+    <Type Name="ExpenseMaster">
+      <Column Name="EMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ExpenseNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Salary" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Transportation" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Banking" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Power" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Fuel" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Others" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Admin" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="ExpenseMaster_ExpenseDetail" Member="ExpenseDetails" ThisKey="EMId" OtherKey="EMId" Type="ExpenseDetail" />
+      <Association Name="CompanyMaster_ExpenseMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FormMaster" Member="FormMasters">
+    <Type Name="FormMaster">
+      <Column Name="FormId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FormName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="MenuName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="FormMaster_UserPermission" Member="UserPermissions" ThisKey="FormId" OtherKey="FormId" Type="UserPermission" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InwardMaster" Member="InwardMasters">
+    <Type Name="InwardMaster">
+      <Column Name="InwId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RNMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="InwNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Size" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="SizeUnit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GSM" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BF" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Plybond" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Shade" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="IsRew" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="IsClose" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CloseDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="InwardMaster_MixingMaster" Member="MixingMasters" ThisKey="InwId" OtherKey="InwId" Type="MixingMaster" />
+      <Association Name="InwardMaster_RewinderMaster" Member="RewinderMasters" ThisKey="InwId" OtherKey="InwId" Type="RewinderMaster" />
+      <Association Name="CompanyMaster_InwardMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="ItemMaster_InwardMaster" Member="ItemMaster" ThisKey="IMId" OtherKey="IMId" Type="ItemMaster" IsForeignKey="true" />
+      <Association Name="ReceiveNoteMaster_InwardMaster" Member="ReceiveNoteMaster" ThisKey="RNMId" OtherKey="RNMId" Type="ReceiveNoteMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemMaster" Member="ItemMasters">
+    <Type Name="ItemMaster">
+      <Column Name="IMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ProcessType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="InwardType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="UOM" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ItemMaster_ConsumptionDetail" Member="ConsumptionDetails" ThisKey="IMId" OtherKey="IMId" Type="ConsumptionDetail" />
+      <Association Name="ItemMaster_InwardMaster" Member="InwardMasters" ThisKey="IMId" OtherKey="IMId" Type="InwardMaster" />
+      <Association Name="ItemMaster_MixingMaster" Member="MixingMasters" ThisKey="IMId" OtherKey="IMId" Type="MixingMaster" />
+      <Association Name="ItemMaster_ReceiveNoteDetail" Member="ReceiveNoteDetails" ThisKey="IMId" OtherKey="IMId" Type="ReceiveNoteDetail" />
+      <Association Name="CompanyMaster_ItemMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MachineMaster" Member="MachineMasters">
+    <Type Name="MachineMaster">
+      <Column Name="MachinId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Machine" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LotNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DegreeInnerDiameter" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Size" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="HeightLength" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CSType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DesignThickness" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IsClose" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="MachineMaster_WasteMaster" Member="WasteMasters" ThisKey="MachinId" OtherKey="MachineId" Type="WasteMaster" />
+      <Association Name="MachineMaster_ConsumptionMaster" Member="ConsumptionMasters" ThisKey="MachinId" OtherKey="MachinId" Type="ConsumptionMaster" />
+      <Association Name="MachineMaster_DispatchDetail" Member="DispatchDetails" ThisKey="MachinId" OtherKey="MachineId" Type="DispatchDetail" />
+      <Association Name="MachineMaster_ExpenseDetail" Member="ExpenseDetails" ThisKey="MachinId" OtherKey="MachineId" Type="ExpenseDetail" />
+      <Association Name="MachineMaster_ProductionDetail" Member="ProductionDetails" ThisKey="MachinId" OtherKey="MachineId" Type="ProductionDetail" />
+      <Association Name="CompanyMaster_MachineMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MixingMaster" Member="MixingMasters">
+    <Type Name="MixingMaster">
+      <Column Name="MMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InwId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MixingNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="IssueQty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="MixingWater" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="FinisheQty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="IssueWeight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="MixingMaster_ConsumptionDetail" Member="ConsumptionDetails" ThisKey="MMId" OtherKey="MMId" Type="ConsumptionDetail" />
+      <Association Name="CompanyMaster_MixingMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="InwardMaster_MixingMaster" Member="InwardMaster" ThisKey="InwId" OtherKey="InwId" Type="InwardMaster" IsForeignKey="true" />
+      <Association Name="ItemMaster_MixingMaster" Member="ItemMaster" ThisKey="IMId" OtherKey="IMId" Type="ItemMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PartyMaster" Member="PartyMasters">
+    <Type Name="PartyMaster">
+      <Column Name="PartyId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PartyName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BillingName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="BillingAddress" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="DeliveryAddress" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Website" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="PinCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="StateCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GSTIN" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="PANNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="PartyMaster_DispatchMaster" Member="DispatchMasters" ThisKey="PartyId" OtherKey="PartyId" Type="DispatchMaster" />
+      <Association Name="PartyMaster_ReceiveNoteMaster" Member="ReceiveNoteMasters" ThisKey="PartyId" OtherKey="PartyId" Type="ReceiveNoteMaster" />
+      <Association Name="CompanyMaster_PartyMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductionDetail" Member="ProductionDetails">
+    <Type Name="ProductionDetail">
+      <Column Name="ProDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="MachineId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Production" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Unit" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="MachineMaster_ProductionDetail" Member="MachineMaster" ThisKey="MachineId" OtherKey="MachinId" Type="MachineMaster" IsForeignKey="true" />
+      <Association Name="ProductionMaster_ProductionDetail" Member="ProductionMaster" ThisKey="ProId" OtherKey="ProId" Type="ProductionMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProductionMaster" Member="ProductionMasters">
+    <Type Name="ProductionMaster">
+      <Column Name="ProId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Machine" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ProductionMaster_ProductionDetail" Member="ProductionDetails" ThisKey="ProId" OtherKey="ProId" Type="ProductionDetail" />
+      <Association Name="CompanyMaster_ProductionMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReceiveNoteDetail" Member="ReceiveNoteDetails">
+    <Type Name="ReceiveNoteDetail">
+      <Column Name="RNDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RNMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="IMId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Qty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="InwardQty" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Rate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Discount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="NetRate" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CGST" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SGST" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="IGST" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="OtherCharges" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="IsInward" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ItemMaster_ReceiveNoteDetail" Member="ItemMaster" ThisKey="IMId" OtherKey="IMId" Type="ItemMaster" IsForeignKey="true" />
+      <Association Name="CompanyMaster_ReceiveNoteDetail" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="ReceiveNoteMaster_ReceiveNoteDetail" Member="ReceiveNoteMaster" ThisKey="RNMId" OtherKey="RNMId" Type="ReceiveNoteMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ReceiveNoteMaster" Member="ReceiveNoteMasters">
+    <Type Name="ReceiveNoteMaster">
+      <Column Name="RNMId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="PartyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RNNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Remarks" Type="System.String" DbType="NVarChar(1000)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="ReceiveNoteMaster_InwardMaster" Member="InwardMasters" ThisKey="RNMId" OtherKey="RNMId" Type="InwardMaster" />
+      <Association Name="ReceiveNoteMaster_ReceiveNoteDetail" Member="ReceiveNoteDetails" ThisKey="RNMId" OtherKey="RNMId" Type="ReceiveNoteDetail" />
+      <Association Name="CompanyMaster_ReceiveNoteMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="PartyMaster_ReceiveNoteMaster" Member="PartyMaster" ThisKey="PartyId" OtherKey="PartyId" Type="PartyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RewinderDetail" Member="RewinderDetails">
+    <Type Name="RewinderDetail">
+      <Column Name="RewDId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="RewId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="RewNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Size" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="Weight" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="IsUse" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="RewinderDetail_ConsumptionDetail" Member="ConsumptionDetails" ThisKey="RewDId" OtherKey="RDId" Type="ConsumptionDetail" />
+      <Association Name="RewinderMaster_RewinderDetail" Member="RewinderMaster" ThisKey="RewId" OtherKey="RewId" Type="RewinderMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RewinderMaster" Member="RewinderMasters">
+    <Type Name="RewinderMaster">
+      <Column Name="RewId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="InwId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="Size" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="RewindeSize" Type="System.Decimal" DbType="Decimal(18,4)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="RewinderMaster_RewinderDetail" Member="RewinderDetails" ThisKey="RewId" OtherKey="RewId" Type="RewinderDetail" />
+      <Association Name="CompanyMaster_RewinderMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+      <Association Name="InwardMaster_RewinderMaster" Member="InwardMaster" ThisKey="InwId" OtherKey="InwId" Type="InwardMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserMaster" Member="UserMasters">
+    <Type Name="UserMaster">
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Association Name="UserMaster_UserPermission" Member="UserPermissions" ThisKey="UserId" OtherKey="UserId" Type="UserPermission" />
+      <Association Name="CompanyMaster_UserMaster" Member="CompanyMaster" ThisKey="CompanyId" OtherKey="CompanyId" Type="CompanyMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.UserPermission" Member="UserPermissions">
+    <Type Name="UserPermission">
+      <Column Name="UPId" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="FormId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="FormMaster_UserPermission" Member="FormMaster" ThisKey="FormId" OtherKey="FormId" Type="FormMaster" IsForeignKey="true" />
+      <Association Name="UserMaster_UserPermission" Member="UserMaster" ThisKey="UserId" OtherKey="UserId" Type="UserMaster" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.UserSignIn" Method="UserSignIn">
+    <Parameter Name="UserName" Parameter="userName" Type="System.String" DbType="NVarChar(100)" />
+    <Parameter Name="Password" Parameter="password" Type="System.String" DbType="NVarChar(100)" />
+    <ElementType Name="UserSignInResult">
+      <Column Name="UserId" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(150)" CanBeNull="true" />
+      <Column Name="ContactNo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Type" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AddDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EditDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="IsDelete" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="DeleteDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CompanyId" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

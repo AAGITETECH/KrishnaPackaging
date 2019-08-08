@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 20, 59.5" name="KrishnaPackagingDb">
+  <DataContextMoniker Name="/KrishnaPackagingDbDataContext" />
+  <nestedChildShapes>
+    <classShape Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" absoluteBounds="0.75, 25.25, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c99de51b-62be-43eb-94a1-05157b18c307" absoluteBounds="0.765, 25.71, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ac68570-f861-44ea-ade4-2d26812e33ca" absoluteBounds="9.25, 32.375, 2, 2.7324039713541595">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/WasteMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4aad2e53-45c8-474a-9a0e-ef6fe76b213c" absoluteBounds="9.265, 32.835, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b2f3c65a-a329-4579-936d-5248404e6668" absoluteBounds="17.75, 34.25, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ConsumptionDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eed65bc0-22a5-458c-a712-212473e961b2" absoluteBounds="17.765, 34.71, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="906dc761-ad03-411e-b8f9-880c649e438d" absoluteBounds="6.25, 35.5, 2, 2.3478011067708309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ConsumptionMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb1b92fd-e9ae-449b-a25a-46970e6fb7cb" absoluteBounds="6.265, 35.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="24679934-17f5-4680-a145-518aed25acae" absoluteBounds="9, 44.875, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/DispatchDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b862a74c-c4a8-4285-95f1-bf250e7b3794" absoluteBounds="9.015, 45.335, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d0e3cf07-4b3f-485c-81d4-980460333691" absoluteBounds="6.25, 40.5, 2, 3.3093082682291737">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/DispatchMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="11f108e4-4b73-4225-9e9a-06e152638143" absoluteBounds="6.265, 40.96, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5f0b143-7771-4b3b-af73-2e57106a5fc7" absoluteBounds="9.25, 36.5, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ExpenseDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="00d4409b-f2cd-483d-99d2-06e5d7cb791e" absoluteBounds="9.265, 36.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="92208a7a-9ea9-43e8-af4c-b192700cec81" absoluteBounds="3.5, 39.875, 2, 3.6939111328125023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ExpenseMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4c0f8058-203d-4bbc-9b3b-d289326ff7c5" absoluteBounds="3.515, 40.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca607aa1-7e53-411a-8416-681e1e768b82" absoluteBounds="3.5, 26, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/FormMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0ce70ce1-591d-4a8b-aefa-d77592f34819" absoluteBounds="3.515, 26.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51437451-163f-4b10-80ff-a621c9fc9bb0" absoluteBounds="12.25, 29.875, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/InwardMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6c19b63d-8ef8-48d6-8d6a-9ff8491e6e3f" absoluteBounds="12.265, 30.335, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" absoluteBounds="3.5, 35.875, 2, 3.3093082682291595">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ItemMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e8fc222-cd53-4c3e-ac2f-f035621c65e4" absoluteBounds="3.515, 36.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="67e4a729-4cea-4c6c-b773-00ddb3084997" absoluteBounds="3.5, 44.375, 2, 3.8862125651041595">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a9832de5-db6f-48a6-821c-46ce4a0827ec" absoluteBounds="3.515, 44.835, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5ab38a82-1795-4de3-b4e7-1dc0fcdbda4b" absoluteBounds="15, 32.375, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/MixingMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e10f206a-8cd5-493c-954f-01a3423f5d7c" absoluteBounds="15.015, 32.835, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44c243d6-1283-4140-8e63-b5468228f33b" absoluteBounds="3.5, 54.375, 2, 4.8477197265625023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/PartyMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f347a30f-0219-47b1-9f40-6098c1c54c28" absoluteBounds="3.515, 54.835, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b82e274a-5d4b-4d0b-8b25-4c75acbd75f5" absoluteBounds="6.25, 31.5, 2, 2.732403971354163">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ProductionDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9e8869c8-1d18-41bf-8248-7e3c6a5f2cc0" absoluteBounds="6.265, 31.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b6b940ba-da04-4c4f-93b4-74b5709dc2a8" absoluteBounds="3.5, 21.5, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ProductionMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d3446d87-f7bb-41ee-9a73-0cf1eb2b39a7" absoluteBounds="3.515, 21.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9336e1bf-a0ae-4e24-8026-151834b0380d" absoluteBounds="9.25, 26.875, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ReceiveNoteDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="cceee81a-906a-4069-8bda-f15ea2fa4c90" absoluteBounds="9.265, 27.335, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="709006c9-a7e3-402d-83fc-fd3cf526b008" absoluteBounds="9.25, 40.75, 2, 2.9247054036458309">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/ReceiveNoteMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="904b4dc8-4ee0-443d-a680-cf79b436b0ad" absoluteBounds="9.265, 41.21, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="eb814bdb-8d73-4fd9-ad65-b4e74c0622b4" absoluteBounds="17.75, 28.5, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/RewinderDetail" />
+      <nestedChildShapes>
+        <elementListCompartment Id="852b19b9-c95f-4fd5-bc08-3ffb77f1084b" absoluteBounds="17.765, 28.96, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4d57eef0-0855-4bae-9d63-c5577b435389" absoluteBounds="15, 28.625, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/RewinderMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2cd62a28-4401-4bcc-b586-4b463acd6c45" absoluteBounds="15.015, 29.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4ba60ad5-18db-4360-8978-6eda2deaa448" absoluteBounds="3.5, 28.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/UserMaster" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7dcebe60-ee8d-4dab-9220-66dc6346972a" absoluteBounds="3.515, 28.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="afad6f04-f9b9-465a-bccc-ccc404159564" absoluteBounds="6.25, 28.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/KrishnaPackagingDbDataContext/UserPermission" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83a1a153-6112-4483-b04b-710e292f93ea" absoluteBounds="6.265, 29.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 29.9054182942708); (1.75 : 34.7011539713542); (1.93229291666667 : 34.7011539713542 : JumpStart); (2.09895958333333 : 34.7011539713542 : JumpEnd); (2.19791916666667 : 34.7011539713542 : JumpStart); (2.36458583333333 : 34.7011539713542 : JumpEnd); (2.46354541666667 : 34.7011539713542 : JumpStart); (2.76302520833333 : 34.7011539713542 : JumpEnd); (4.41666666666667 : 34.7011539713542 : JumpStart); (4.58333333333333 : 34.7011539713542 : JumpEnd); (5.79166666666667 : 34.7011539713542 : JumpStart); (5.95833333333333 : 34.7011539713542 : JumpEnd); (8.79166666666667 : 34.7011539713542 : JumpStart); (9.20833333333333 : 34.7011539713542 : JumpEnd); (9.25 : 34.7011539713542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_WasteMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="4ac68570-f861-44ea-ade4-2d26812e33ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 36.1883048502604); (8.66666666666667 : 36.1883048502604 : JumpStart); (8.95833333333333 : 36.1883048502604 : JumpEnd); (9.04166666666667 : 36.1883048502604 : JumpStart); (9.20833333333333 : 36.1883048502604 : JumpEnd); (10.1666666666667 : 36.1883048502604 : JumpStart); (10.3333333333333 : 36.1883048502604 : JumpEnd); (12.6354141666667 : 36.1883048502604 : JumpStart); (12.8020808333333 : 36.1883048502604 : JumpEnd); (13.1666666666667 : 36.1883048502604 : JumpStart); (13.3333333333333 : 36.1883048502604 : JumpEnd); (15.9166666666667 : 36.1883048502604 : JumpStart); (16.0833333333333 : 36.1883048502604 : JumpEnd); (17.75 : 36.1883048502604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ConsumptionMaster/ConsumptionMaster_ConsumptionDetail" />
+      <nodes>
+        <classShapeMoniker Id="906dc761-ad03-411e-b8f9-880c649e438d" />
+        <classShapeMoniker Id="b2f3c65a-a329-4579-936d-5248404e6668" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 29.9054182942708); (2.2812525 : 35.65625); (2.46354541666667 : 35.65625 : JumpStart); (2.76302520833333 : 35.65625 : JumpEnd); (4.41666666666667 : 35.65625 : JumpStart); (4.58333333333333 : 35.65625 : JumpEnd); (5.79166666666667 : 35.65625 : JumpStart); (5.95833333333333 : 35.65625 : JumpEnd); (6.25 : 35.65625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ConsumptionMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="906dc761-ad03-411e-b8f9-880c649e438d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 43.8093082682292); (7.25 : 46.3373527018229); (9 : 46.3373527018229)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/DispatchMaster/DispatchMaster_DispatchDetail" />
+      <nodes>
+        <classShapeMoniker Id="d0e3cf07-4b3f-485c-81d4-980460333691" />
+        <classShapeMoniker Id="24679934-17f5-4680-a145-518aed25acae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 29.9054182942708); (1.2187475 : 43.7203597005208); (1.40104041666667 : 43.7203597005208 : JumpStart); (1.56770708333333 : 43.7203597005208 : JumpEnd); (2.59635854166667 : 43.7203597005208 : JumpStart); (2.76302520833333 : 43.7203597005208 : JumpEnd); (5.79166666666667 : 43.7203597005208 : JumpStart); (5.95833333333333 : 43.7203597005208 : JumpEnd); (5.97916666666667 : 43.7203597005208 : JumpStart); (6.14583333333333 : 43.7203597005208 : JumpEnd); (6.25 : 43.7203597005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_DispatchMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="d0e3cf07-4b3f-485c-81d4-980460333691" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.8181469726563); (5.85416666666667 : 27.8181469726563 : JumpStart); (6.02083333333333 : 27.8181469726563 : JumpEnd); (7.16666666666667 : 27.8181469726563 : JumpStart); (7.33333333333333 : 27.8181469726563 : JumpEnd); (9 : 27.8181469726563); (9 : 35.875); (9.04166666666667 : 35.875 : JumpStart); (9.20833333333333 : 35.875 : JumpEnd); (10.25 : 35.875); (10.25 : 36.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ExpenseDetail" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="c5f0b143-7771-4b3b-af73-2e57106a5fc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 39.875); (5.875 : 39.5); (5.97916666666667 : 39.5 : JumpStart); (6.14583333333333 : 39.5 : JumpEnd); (8.66666666666667 : 39.5 : JumpStart); (8.95833333333333 : 39.5 : JumpEnd); (9.04166666666667 : 39.5 : JumpStart); (9.20833333333333 : 39.5 : JumpEnd); (10.25 : 39.5); (10.25 : 39.0401025390625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ExpenseMaster/ExpenseMaster_ExpenseDetail" />
+      <nodes>
+        <classShapeMoniker Id="92208a7a-9ea9-43e8-af4c-b192700cec81" />
+        <classShapeMoniker Id="c5f0b143-7771-4b3b-af73-2e57106a5fc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 29.9054182942708); (2.54687875 : 41.7219555664063); (2.59635854166667 : 41.7219555664063 : JumpStart); (2.76302520833333 : 41.7219555664063 : JumpEnd); (3.5 : 41.7219555664063)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ExpenseMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="92208a7a-9ea9-43e8-af4c-b192700cec81" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 25.59375); (5.85416666666667 : 25.59375 : JumpStart); (6.02083333333333 : 25.59375 : JumpEnd); (13.25 : 25.59375); (13.25 : 29.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_InwardMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="51437451-163f-4b10-80ff-a621c9fc9bb0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 39.1434554036458); (5.79166666666667 : 39.1434554036458 : JumpStart); (5.95833333333333 : 39.1434554036458 : JumpEnd); (5.97916666666667 : 39.1434554036458 : JumpStart); (6.14583333333333 : 39.1434554036458 : JumpEnd); (8.66666666666667 : 39.1434554036458 : JumpStart); (8.95833333333333 : 39.1434554036458 : JumpEnd); (9.04166666666667 : 39.1434554036458 : JumpStart); (9.22998046875001 : 39.1434554036458 : JumpEnd); (10.1666666666667 : 39.1434554036458 : JumpStart); (10.3333333333333 : 39.1434554036458 : JumpEnd); (12.6354141666667 : 39.1434554036458 : JumpStart); (12.8020808333333 : 39.1434554036458 : JumpEnd); (18.75 : 39.1434554036458); (18.75 : 37.3670068359375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ItemMaster/ItemMaster_ConsumptionDetail" />
+      <nodes>
+        <classShapeMoniker Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" />
+        <classShapeMoniker Id="b2f3c65a-a329-4579-936d-5248404e6668" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 39.1230289713542); (5.79166666666667 : 39.1230289713542 : JumpStart); (5.95833333333333 : 39.1230289713542 : JumpEnd); (5.97916666666667 : 39.1230289713542 : JumpStart); (6.14583333333333 : 39.1230289713542 : JumpEnd); (8.66666666666667 : 39.1230289713542 : JumpStart); (8.95833333333333 : 39.1230289713542 : JumpEnd); (9.04166666666667 : 39.1230289713542 : JumpStart); (9.25040690104167 : 39.1230289713542 : JumpEnd); (12.6354141666667 : 39.1230289713542 : JumpStart); (12.8020808333333 : 39.1230289713542 : JumpEnd); (13.25 : 39.1230289713542); (13.25 : 34.5304182942708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ItemMaster/ItemMaster_InwardMaster" />
+      <nodes>
+        <classShapeMoniker Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" />
+        <classShapeMoniker Id="51437451-163f-4b10-80ff-a621c9fc9bb0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.01562625 : 29.9054182942708); (2.01562625 : 37.5296541341146); (2.46354541666667 : 37.5296541341146 : JumpStart); (2.76302520833333 : 37.5296541341146 : JumpEnd); (3.5 : 37.5296541341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ItemMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 45.3561768509115); (6.63541416666667 : 45.3561768509115 : JumpStart); (6.80208083333333 : 45.3561768509115 : JumpEnd); (7.16666666666667 : 45.3561768509115 : JumpStart); (7.33333333333333 : 45.3561768509115 : JumpEnd); (8.75 : 45.3561768509115); (8.75 : 35.4824039713542); (8.79166666666667 : 35.4824039713542 : JumpStart); (9.20833333333333 : 35.4824039713542 : JumpEnd); (10.25 : 35.4824039713542); (10.25 : 35.1074039713542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster/MachineMaster_WasteMaster" />
+      <nodes>
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+        <classShapeMoniker Id="4ac68570-f861-44ea-ade4-2d26812e33ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 44.375); (6.0625 : 43.8125); (6.0625 : 36.7832775533854); (6.25 : 36.7832775533854)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster/MachineMaster_ConsumptionMaster" />
+      <nodes>
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+        <classShapeMoniker Id="906dc761-ad03-411e-b8f9-880c649e438d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 47.1310290527344); (6.63541416666667 : 47.1310290527344 : JumpStart); (6.80208083333333 : 47.1310290527344 : JumpEnd); (9 : 47.1310290527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster/MachineMaster_DispatchDetail" />
+      <nodes>
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+        <classShapeMoniker Id="24679934-17f5-4680-a145-518aed25acae" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 44.4242297692308); (6.125 : 43.7992297692308); (6.125 : 39.9151025390625); (8.375 : 39.9151025390625); (8.69107443490112 : 39.5990281041614 : JumpStart); (8.80892556509888 : 39.4811769739636 : JumpEnd); (8.81607443490112 : 39.4740281041614 : JumpStart); (8.93392556509888 : 39.3561769739636 : JumpEnd); (9.06607443490112 : 39.2240281041614 : JumpStart); (9.18392556509888 : 39.1061769739636 : JumpEnd); (9.25 : 39.0401025390625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster/MachineMaster_ExpenseDetail" />
+      <nodes>
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+        <classShapeMoniker Id="c5f0b143-7771-4b3b-af73-2e57106a5fc7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.48437375 : 29.9054182942708); (1.48437375 : 46.3181062825521); (2.59635854166667 : 46.3181062825521 : JumpStart); (2.76302520833333 : 46.3181062825521 : JumpEnd); (3.5 : 46.3181062825521)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_MachineMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 35.0633048502604); (17.75 : 35.0633048502604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MixingMaster/MixingMaster_ConsumptionDetail" />
+      <nodes>
+        <classShapeMoniker Id="5ab38a82-1795-4de3-b4e7-1dc0fcdbda4b" />
+        <classShapeMoniker Id="b2f3c65a-a329-4579-936d-5248404e6668" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(0.95312125 : 29.9054182942708); (0.95312125 : 35.3037019856771); (1.13541416666667 : 35.3037019856771 : JumpStart); (1.30208083333333 : 35.3037019856771 : JumpEnd); (1.40104041666667 : 35.3037019856771 : JumpStart); (1.56770708333333 : 35.3037019856771 : JumpEnd); (1.93229291666667 : 35.3037019856771 : JumpStart); (2.09895958333333 : 35.3037019856771 : JumpEnd); (2.19791916666667 : 35.3037019856771 : JumpStart); (2.36458583333333 : 35.3037019856771 : JumpEnd); (2.46354541666667 : 35.3037019856771 : JumpStart); (2.76302520833333 : 35.3037019856771 : JumpEnd); (4.41666666666667 : 35.3037019856771 : JumpStart); (4.58333333333333 : 35.3037019856771 : JumpEnd); (5.79166666666667 : 35.3037019856771 : JumpStart); (5.95833333333333 : 35.3037019856771 : JumpEnd); (8.79166666666667 : 35.3037019856771 : JumpStart); (9.20833333333333 : 35.3037019856771 : JumpEnd); (10.1666666666667 : 35.3037019856771 : JumpStart); (10.3333333333333 : 35.3037019856771 : JumpEnd); (12.6354141666667 : 35.3037019856771 : JumpStart); (12.8020808333333 : 35.3037019856771 : JumpEnd); (13.1666666666667 : 35.3037019856771 : JumpStart); (13.3333333333333 : 35.3037019856771 : JumpEnd); (15 : 35.3037019856771)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_MixingMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="5ab38a82-1795-4de3-b4e7-1dc0fcdbda4b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 33.4527091471354); (15 : 33.4527091471354)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/InwardMaster/InwardMaster_MixingMaster" />
+      <nodes>
+        <classShapeMoniker Id="51437451-163f-4b10-80ff-a621c9fc9bb0" />
+        <classShapeMoniker Id="5ab38a82-1795-4de3-b4e7-1dc0fcdbda4b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 39.1638818359375); (5.79166666666667 : 39.1638818359375 : JumpStart); (5.95833333333333 : 39.1638818359375 : JumpEnd); (5.97916666666667 : 39.1638818359375 : JumpStart); (6.14583333333333 : 39.1638818359375 : JumpEnd); (8.66666666666667 : 39.1638818359375 : JumpStart); (8.95833333333333 : 39.1638818359375 : JumpEnd); (9.04166666666667 : 39.1638818359375 : JumpStart); (9.20955403645834 : 39.1638818359375 : JumpEnd); (10.1666666666667 : 39.1638818359375 : JumpStart); (10.3333333333333 : 39.1638818359375 : JumpEnd); (12.6354141666667 : 39.1638818359375 : JumpStart); (12.8020808333333 : 39.1638818359375 : JumpEnd); (16 : 39.1638818359375); (16 : 35.8766097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ItemMaster/ItemMaster_MixingMaster" />
+      <nodes>
+        <classShapeMoniker Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" />
+        <classShapeMoniker Id="5ab38a82-1795-4de3-b4e7-1dc0fcdbda4b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 56.7988598632813); (6.7187475 : 56.7988598632813); (6.7187475 : 43.8093082682292)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/PartyMaster/PartyMaster_DispatchMaster" />
+      <nodes>
+        <classShapeMoniker Id="44c243d6-1283-4140-8e63-b5468228f33b" />
+        <classShapeMoniker Id="d0e3cf07-4b3f-485c-81d4-980460333691" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.679691875 : 29.9054182942708); (2.679691875 : 56.7988598632813); (3.5 : 56.7988598632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_PartyMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="44c243d6-1283-4140-8e63-b5468228f33b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.45076923076923 : 44.375); (5.875 : 43.9507692307692); (5.875 : 32.8662019856771); (6.25 : 32.8662019856771)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/MachineMaster/MachineMaster_ProductionDetail" />
+      <nodes>
+        <classShapeMoniker Id="67e4a729-4cea-4c6c-b773-00ddb3084997" />
+        <classShapeMoniker Id="b82e274a-5d4b-4d0b-8b25-4c75acbd75f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 23.9770246159856); (5.9375 : 24.4145246159856); (5.9375 : 32.1518489928385); (6.25 : 32.1518489928385)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ProductionMaster/ProductionMaster_ProductionDetail" />
+      <nodes>
+        <classShapeMoniker Id="b6b940ba-da04-4c4f-93b4-74b5709dc2a8" />
+        <classShapeMoniker Id="b82e274a-5d4b-4d0b-8b25-4c75acbd75f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 25.25); (1.75 : 22.7700512695313); (3.5 : 22.7700512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ProductionMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="b6b940ba-da04-4c4f-93b4-74b5709dc2a8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 35.875); (4.5 : 31.2324039713542); (5.85416666666667 : 31.2324039713542 : JumpStart); (6.02083333333333 : 31.2324039713542 : JumpEnd); (8.625 : 31.2324039713542); (8.625 : 29.6742821334635); (8.91666666666667 : 29.6742821334635 : JumpStart); (9.20833333333333 : 29.6742821334635 : JumpEnd); (9.25 : 29.6742821334635)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ItemMaster/ItemMaster_ReceiveNoteDetail" />
+      <nodes>
+        <classShapeMoniker Id="8883b365-7f9d-4db0-9843-80a8d4fa4a8c" />
+        <classShapeMoniker Id="9336e1bf-a0ae-4e24-8026-151834b0380d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 28.0653234863281); (5.85416666666667 : 28.0653234863281 : JumpStart); (6.02083333333333 : 28.0653234863281 : JumpEnd); (7.16666666666667 : 28.0653234863281 : JumpStart); (7.33333333333333 : 28.0653234863281 : JumpEnd); (8.91666666666667 : 28.0653234863281 : JumpStart); (9.20833333333333 : 28.0653234863281 : JumpEnd); (9.25 : 28.0653234863281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ReceiveNoteDetail" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="9336e1bf-a0ae-4e24-8026-151834b0380d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 42.2123527018229); (12.7187475 : 42.2123527018229); (12.7187475 : 34.5304182942708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ReceiveNoteMaster/ReceiveNoteMaster_InwardMaster" />
+      <nodes>
+        <classShapeMoniker Id="709006c9-a7e3-402d-83fc-fd3cf526b008" />
+        <classShapeMoniker Id="51437451-163f-4b10-80ff-a621c9fc9bb0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9.25 : 40.75); (8.875 : 40.375); (8.875 : 31.9054182942708); (8.94107443490112 : 31.8393438593697 : JumpStart); (9.05892556509888 : 31.721492729172 : JumpEnd); (9.06607443490112 : 31.7143438593697 : JumpStart); (9.18392556509888 : 31.596492729172 : JumpEnd); (9.25 : 31.5304182942708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/ReceiveNoteMaster/ReceiveNoteMaster_ReceiveNoteDetail" />
+      <nodes>
+        <classShapeMoniker Id="709006c9-a7e3-402d-83fc-fd3cf526b008" />
+        <classShapeMoniker Id="9336e1bf-a0ae-4e24-8026-151834b0380d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 27.6022179589844); (5.85416666666667 : 27.6022179589844 : JumpStart); (6.02083333333333 : 27.6022179589844 : JumpEnd); (7.16666666666667 : 27.6022179589844 : JumpStart); (7.33333333333333 : 27.6022179589844 : JumpEnd); (9.125 : 27.6022179589844); (9.125 : 40.375); (10.281252 : 40.375); (10.281252 : 40.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_ReceiveNoteMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="709006c9-a7e3-402d-83fc-fd3cf526b008" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 55.5556774316406); (6.63541416666667 : 55.5556774316406 : JumpStart); (6.80208083333333 : 55.5556774316406 : JumpEnd); (11.15625 : 55.5556774316406); (11.15625 : 43.6747054036458)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/PartyMaster/PartyMaster_ReceiveNoteMaster" />
+      <nodes>
+        <classShapeMoniker Id="44c243d6-1283-4140-8e63-b5468228f33b" />
+        <classShapeMoniker Id="709006c9-a7e3-402d-83fc-fd3cf526b008" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(18.75 : 31.2324039713542); (18.75 : 34.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/RewinderDetail/RewinderDetail_ConsumptionDetail" />
+      <nodes>
+        <classShapeMoniker Id="eb814bdb-8d73-4fd9-ad65-b4e74c0622b4" />
+        <classShapeMoniker Id="b2f3c65a-a329-4579-936d-5248404e6668" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(17 : 29.8950512695313); (17.75 : 29.8950512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/RewinderMaster/RewinderMaster_RewinderDetail" />
+      <nodes>
+        <classShapeMoniker Id="4d57eef0-0855-4bae-9d63-c5577b435389" />
+        <classShapeMoniker Id="eb814bdb-8d73-4fd9-ad65-b4e74c0622b4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 25.7968775); (5.85416666666667 : 25.7968775 : JumpStart); (6.02083333333333 : 25.7968775 : JumpEnd); (13.1666666666667 : 25.7968775 : JumpStart); (13.3333333333333 : 25.7968775 : JumpEnd); (16 : 25.7968775); (16 : 28.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_RewinderMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="4d57eef0-0855-4bae-9d63-c5577b435389" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(14.25 : 30.5200512695313); (15 : 30.5200512695313)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/InwardMaster/InwardMaster_RewinderMaster" />
+      <nodes>
+        <classShapeMoniker Id="51437451-163f-4b10-80ff-a621c9fc9bb0" />
+        <classShapeMoniker Id="4d57eef0-0855-4bae-9d63-c5577b435389" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 29.0777091471354); (3.5 : 29.0777091471354)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/CompanyMaster/CompanyMaster_UserMaster" />
+      <nodes>
+        <classShapeMoniker Id="8a01d57b-ccd7-47f6-baf7-3027322f12f2" />
+        <classShapeMoniker Id="4ba60ad5-18db-4360-8978-6eda2deaa448" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 26.6931469726563); (5.85416666666667 : 26.6931469726563 : JumpStart); (6.02083333333333 : 26.6931469726563 : JumpEnd); (7.25 : 26.6931469726563); (7.25 : 28.625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/FormMaster/FormMaster_UserPermission" />
+      <nodes>
+        <classShapeMoniker Id="ca607aa1-7e53-411a-8416-681e1e768b82" />
+        <classShapeMoniker Id="afad6f04-f9b9-465a-bccc-ccc404159564" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 29.7027498372396); (5.85416666666667 : 29.7027498372396 : JumpStart); (6.02083333333333 : 29.7027498372396 : JumpEnd); (6.25 : 29.7027498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/KrishnaPackagingDbDataContext/UserMaster/UserMaster_UserPermission" />
+      <nodes>
+        <classShapeMoniker Id="4ba60ad5-18db-4360-8978-6eda2deaa448" />
+        <classShapeMoniker Id="afad6f04-f9b9-465a-bccc-ccc404159564" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
